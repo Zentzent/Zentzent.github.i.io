@@ -1,51 +1,23 @@
+/* style.css */
 body {
-	background-color: #000;
-	margin: 0;
-	padding: 0;
+    background-color: black;
+    color: white;
+    text-align: center;
 }
 
 .container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	height: 100vh;
-	padding: 0 20px;
+    margin: 0 auto;
+    width: 80%;
+}
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
 }
 
-.image {
-	width: 100%;
-	max-width: 600px;
-	height: auto;
-	margin-bottom: 30px;
-	border-radius:25px;
-}
-
-.title {
-	color: #fff;
-	font-size: 48px;
-	font-weight: bold;
-	margin-bottom: 20px;
-	text-align: center;
-}
-.container a{
-  background: #1CAAE9; border-radius: 50px; padding: 15px;
-  text-decoration: none; color: white; border: 1px solid transparent; padding-top: 20px;
-}
-.description {
-	color: #fff;
-	font-size: 24px;
-	line-height: 1.5;
-	margin-bottom: 0;
-	text-align: center;
-}
-
-@media (max-width: 768px) {
-	.title {
-		font-size: 36px;
-	}
-
-	.description {
-		font-size: 20px;
-	}
+.ty-text {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: .15em solid black; /* The cursor */
+  animation: typing 2s steps(40, end) forwards;
+  color: red;
 }
