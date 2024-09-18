@@ -18,6 +18,23 @@
     <div class="container">
         <h1 class="ty-text">Cie kenak hack</h1>
         <h2 class="ty-text">michelletjang2@gmail.com</h2>
+          <div id="counter"></div>
+
+<script>
+  let count = 1;
+  const counterElement = document.getElementById('counter');
+
+  function increment() {
+    counterElement.textContent = count;
+    count++;
+    if (count <= 10000) {
+      setTimeout(increment, 1000); // Ubah 1000 menjadi waktu delay yang diinginkan
+    }
+  }
+
+  increment();
+</script>
+
         
         <img  src="m.jpg" alt="Gambar deskriptif">
     </div>
